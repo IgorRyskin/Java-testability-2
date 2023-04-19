@@ -1,9 +1,9 @@
 public class Main {
     public static void main(String[] args) {
         BmiService service = new BmiService();
-        double height = 1.87;
-        int weight = 98;
-        int bmi = service.calculate(height);
-        System.out.println("Индекс массы вашего тела" + bmi);
+        double weightInKg = 98;
+        double heightInMeters = 1.87;
+        int bmi = service.calculate(weightInKg, heightInMeters);
+        System.out.println(bmi);
+        }
     }
-}
